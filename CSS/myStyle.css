@@ -10,11 +10,22 @@ body {
     color: white;
 }
 
+.button {
+    font-size: 35px;
+    font-weight: bold;
+    transition-duration: 0.1s;
+}
+
+.button:hover {
+    background-color:rgb(42, 98, 172);
+    transition-duration: 0.1s;
+}
+
 .header {
     position: sticky; 
     top: 0; 
     left: 0; 
-    background-color:rgb(66, 148, 255);
+    background-color:rgb(66, 148, 255, 0.9);
     width: 100%; 
 }
 
@@ -23,17 +34,9 @@ body {
     margin: 0 auto; 
     padding: 10px; 
 
-    > a {
+    > .button {
         padding-left: 15px; 
         padding-right: 15px; 
-        font-size: 35px;
-        font-weight: bold;
-        transition-duration: 0.1s;
-    }
-
-    > a:hover {
-        background-color:rgb(42, 98, 172);
-        transition-duration: 0.1s;
     }
 }
 
@@ -50,27 +53,64 @@ body {
 }
 
 .profileBloc {
-    display: grid;
-    justify-content: center;
-    align-content: center;
-    gap: 25px;
-    grid-auto-flow: column;
-    margin-bottom : 50px;
+    text-align: center;
+    padding-bottom: 10%;
 
     > img {
-        width: 400px;
+        border-radius: 200px;
+        width: 50%;
+        filter: drop-shadow(0 0 1rem rgb(66, 148, 255));
     }
 
     > p {
         font-size: 150%;
-        max-width: 400px;
-        display: block; 
-        overflow: hidden;
+        margin: 5% 5%;
     }
 }
 
-/* média querry : quand l'écran est plus grand que 960px */
-@media screen and (min-width: 960px){
+.d-flex {
+    > section {
+        text-align: center;
+        margin: 0 5%;
+    }
+}
+
+.footer {
+    text-align: center;
+    background-color:rgba(23, 63, 116, 0.9);
+    width: 100%; 
+    bottom: 0;
+    margin: 0 auto; 
+}
+
+.divider {
+    background-color: white;
+    margin: 0 15%; 
+    height: .1em;
+}
+
+/* média querry : quand l'écran est plus grand que 640px */
+@media screen and (min-width: 640px){
+    .profileBloc {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        gap: 25px;
+        grid-auto-flow: column;
+        max-width: 50%;
+        padding: 0;
+        margin: 0 auto; 
+
+        > img {
+            width: 100%;
+        }
+
+        > p {
+            font-size: 200%;
+            text-align: left;
+        }
+    }
+
     .d-flex {
         display: grid;
         justify-content: center;

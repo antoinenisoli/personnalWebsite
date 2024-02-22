@@ -6,6 +6,7 @@
         <meta charset="UTF-8">
         <meta name="description" content="Page d'acceuil du CV d'Antoine Nisoli">
 		<meta name="auteur" content="Antoine Nisoli">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
 
         <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
@@ -14,31 +15,32 @@
     <body>        
         <header class="header">
             <nav role="naviguation" class="header-topMenu">
-                <a href="skills.html">Compétences</a>
-                <a href="experiences.html">Expériences</a>
-                <a href="education.html">Formation</a>    
-                <a href="index.html">Profil</a>
+                <a class="button" href="skills.html">Compétences</a>
+                <a class="button" href="experiences.html">Expériences</a>
+                <a class="button" href="education.html">Formation</a>    
+                <a class="button" href="index.html">Profil</a>
             </nav>
         </header>
 
         <main>
             <p class="authorName">
                 Antoine Nisoli <br>
-                <span class="job"> Développeur full stack .NET </span>
+                <span class="job">Développeur full stack .NET</span>
             </p>
 
             <section class="profileBloc">
                 <img src="../images/antoine_nisoli.jpg" alt="Ma photo.">
-                <p id="profilText">
+                <p>
                     Dans le cadre de ma formation de <span class="job">Concepteur Développeur d'Application .NET full stack</span>,
                     je suis activement à la recherche d'une alternance
-                    a partir du 13/02/2024.
+                    a partir du 13/05/2024.
                 </p>
             </section>
 
             <section class="d-flex">
                 <section>
                     <h2>PROFIL</h2>
+                    <div class="divider"></div>
                     <p>
                         Je prépare à la rentrée de Février
                         2024 un Titre RNCP de Niveau 6
@@ -56,6 +58,7 @@
         
                 <section>
                     <h2>COORDONNÉES</h2>
+                    <div class="divider"></div>
                     <p>
                         07 70 30 11 85 <br>
                         nisoliantoine@outlook.com <br>
@@ -66,14 +69,15 @@
         
                 <section>
                     <h2>LANGUES</h2>
+                    <div class="divider"></div>
                     <p> Anglais - Niveau B2 </p>
                 </section>
             </section>
         </main>
 
-        <footer>
-            <a href="https://linktr.ee/antoinenisoli">     
-                <h1> Visiter mon portfolio </h1>
+        <footer class="footer">
+            <a class="button" href="https://linktr.ee/antoinenisoli">     
+                Visiter mon portfolio
             </a>
 
             <p>
