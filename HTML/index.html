@@ -2,7 +2,7 @@
 <html lang="fr">
     <head>
         <title>AntoineNisoli_CV_Profil</title>
-        <link rel="stylesheet" href="../CSS/myStyle.css">
+        <link rel="stylesheet" media="screen" href="../CSS/myStyle.css">
         <meta charset="UTF-8">
         <meta name="description" content="Page d'acceuil du CV d'Antoine Nisoli">
 		<meta name="auteur" content="Antoine Nisoli">
@@ -11,14 +11,23 @@
         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
         </style>
     </head>
-    <body>
-        <header>
-            <p id="authorName">
+    <body>        
+        <header class="header">
+            <nav role="naviguation" class="header-topMenu">
+                <a href="skills.html">Compétences</a>
+                <a href="experiences.html">Expériences</a>
+                <a href="education.html">Formation</a>    
+                <a href="index.html">Profil</a>
+            </nav>
+        </header>
+
+        <main>
+            <p class="authorName">
                 Antoine Nisoli <br>
                 <span class="job"> Développeur full stack .NET </span>
             </p>
 
-            <section id="profileBloc">
+            <section class="profileBloc">
                 <img src="../images/antoine_nisoli.jpg" alt="Ma photo.">
                 <p id="profilText">
                     Dans le cadre de ma formation de <span class="job">Concepteur Développeur d'Application .NET full stack</span>,
@@ -26,57 +35,39 @@
                     a partir du 13/02/2024.
                 </p>
             </section>
-            
-            <nav>
-                <button onClick="parent.location='experiences.html'">
-                    <p>Expériences</p>
-                </button>
 
-                <button onClick="parent.location='index.html'">
-                    <p>Profil</p>
-                </button>
-
-                <button onClick="parent.location='skills.html'">
-                    <p>Compétences</p>
-                </button>
-
-                <button onClick="parent.location='education.html'">
-                    <p>Formation</p>
-                </button>       
-            </nav>
-        </header>
-
-        <main class="d-flex">
-            <section id="bloc">
-                <h2>PROFIL</h2>
-                <p>
-                    Je prépare à la rentrée de Février
-                    2024 un Titre RNCP de Niveau 6
-                    Concepteur Developpeur
-                    d'Application .NET full stack au
-                    sein de DIGINAMIC. 
-                    
-                    Très motivé et
-                    passionné d’informatique, je
-                    recherche activement une
-                    entreprise en contrat
-                    d'apprentissage pour m'accueillir.
-                </p>
-            </section>
-    
-            <section id="bloc">
-                <h2>COORDONNÉES</h2>
-                <p>
-                    07 70 30 11 85 <br>
-                    nisoliantoine@outlook.com <br>
-                    Lille, France <br>
-                    Permis B <br>
-                </p>
-            </section>
-    
-            <section id="bloc">
-                <h2>LANGUES</h2>
-                <p> Anglais - Niveau B2 </p>
+            <section class="d-flex">
+                <section>
+                    <h2>PROFIL</h2>
+                    <p>
+                        Je prépare à la rentrée de Février
+                        2024 un Titre RNCP de Niveau 6
+                        Concepteur Developpeur
+                        d'Application .NET full stack au
+                        sein de DIGINAMIC. 
+                        
+                        Très motivé et
+                        passionné d’informatique, je
+                        recherche activement une
+                        entreprise en contrat
+                        d'apprentissage pour m'accueillir.
+                    </p>
+                </section>
+        
+                <section>
+                    <h2>COORDONNÉES</h2>
+                    <p>
+                        07 70 30 11 85 <br>
+                        nisoliantoine@outlook.com <br>
+                        Lille, France <br>
+                        Permis B <br>
+                    </p>
+                </section>
+        
+                <section>
+                    <h2>LANGUES</h2>
+                    <p> Anglais - Niveau B2 </p>
+                </section>
             </section>
         </main>
 

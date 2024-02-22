@@ -1,5 +1,8 @@
 body {
-    background-color:rgb(4, 19, 41);
+    background-color:#09162F;
+    /*remove top margin*/
+    margin: 0;
+    padding: 0;
 }
 
 * {
@@ -7,13 +10,38 @@ body {
     color: white;
 }
 
-#authorName {
-    font-size: 35px;
-    font-weight: bold;
+.header {
+    position: sticky; 
+    top: 0; 
+    left: 0; 
+    background-color:rgb(66, 148, 255);
+    width: 100%; 
+}
 
-    margin: auto;
-    width: 30%;
-    padding: 50px;
+.header-topMenu {
+    text-align: center;
+    margin: 0 auto; 
+    padding: 10px; 
+
+    > a {
+        padding-left: 15px; 
+        padding-right: 15px; 
+        font-size: 35px;
+        font-weight: bold;
+        transition-duration: 0.1s;
+    }
+
+    > a:hover {
+        background-color:rgb(42, 98, 172);
+        transition-duration: 0.1s;
+    }
+}
+
+.authorName {
+    font-size: 35px;
+    padding-left: 15%;
+    font-weight: bold;
+    width: 60%;
 }
 
 .job {
@@ -21,43 +49,41 @@ body {
     font-weight: bold;
 }
 
-nav {
-    text-align: center;
-}
-
-button
-{
-    background-color:rgb(66, 148, 255);
-    font-size: 15px;
-    font-weight: bold;
-    padding: 10px;
-    transition-duration: 0.1s;
-}
-
-button:hover
-{
-    transition-duration: 0.1s;
-    padding: 15px;
-}
-
-#profileBloc {
+.profileBloc {
     display: grid;
     justify-content: center;
     align-content: center;
     gap: 25px;
     grid-auto-flow: column;
     margin-bottom : 50px;
+
+    > img {
+        width: 400px;
+    }
+
+    > p {
+        font-size: 150%;
+        max-width: 400px;
+        display: block; 
+        overflow: hidden;
+    }
 }
 
-#profilText {
-    font-size: 150%;
-    max-width: 400px;
-    display: block; 
-    overflow: hidden;
-}
+/* média querry : quand l'écran est plus grand que 960px */
+@media screen and (min-width: 960px){
+    .d-flex {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        grid-auto-flow: column;
 
-img {
-    width: 400px;
+        > section {
+            text-align: center;
+            width: 350px;
+            margin-top : 50px;
+            margin-bottom : 50px;
+        }
+    }
 }
 
 @keyframes onButtonHover {
@@ -72,30 +98,12 @@ img {
     }
 }
 
-@keyframes rotation {
+@keyframes slidein {
     from {
-        transform: rotate(0deg)
+      margin-left: 100%;
     }
+  
     to {
-        transform: rotate(360deg)
-    }
-}
-
-#bloc
-{
-    text-align: center;
-    width: 350px;
-    margin-top : 50px;
-    margin-bottom : 50px;
-}
-
-/* média querry : quand l'écran est plus grand que 960px */
-@media screen and (min-width: 960px){
-    .d-flex {
-        display: grid;
-        justify-content: center;
-        align-content: center;
-        gap: 100px;
-        grid-auto-flow: column;
+      margin-left: 0%;
     }
 }
