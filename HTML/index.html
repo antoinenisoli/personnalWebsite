@@ -13,28 +13,36 @@
     </head>
     <body>
         <header>
-            <span id="authorName">
-                <p>
-                    Antoine Nisoli <br>
-                    <span class="job"> Développeur full stack .NET </span>
-                </p>
-            </span>
+            <p id="authorName">
+                Antoine Nisoli <br>
+                <span class="job"> Développeur full stack .NET </span>
+            </p>
 
             <section id="profileBloc">
                 <img src="../images/antoine_nisoli.jpg" alt="Ma photo.">
                 <p id="profilText">
-                    Dans le cadre de ma formation Concepteur Développeur
-                    d'Application .NET full stack,
+                    Dans le cadre de ma formation de <span class="job">Concepteur Développeur d'Application .NET full stack</span>,
                     je suis activement à la recherche d'une alternance
                     a partir du 13/02/2024.
                 </p>
             </section>
             
             <nav>
-                <input type=button onClick="parent.location='experiences.html'" value='Expériences'>
-                <input type=button onClick="parent.location='index.html'" value='Profil'>
-                <input type=button onClick="parent.location='skills.html'" value='Compétences'>
-                <input type=button onClick="parent.location='education.html'" value='Formation'>            
+                <button onClick="parent.location='experiences.html'">
+                    <p>Expériences</p>
+                </button>
+
+                <button onClick="parent.location='index.html'">
+                    <p>Profil</p>
+                </button>
+
+                <button onClick="parent.location='skills.html'">
+                    <p>Compétences</p>
+                </button>
+
+                <button onClick="parent.location='education.html'">
+                    <p>Formation</p>
+                </button>       
             </nav>
         </header>
 
