@@ -1,0 +1,80 @@
+* {
+    font-family: "Poppins";
+}
+
+#authorName {
+    text-align: left;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.job {
+    color: rgb(66, 148, 255);
+}
+
+input
+{
+    background-color:rgb(66, 148, 255)
+}
+
+#profileBloc {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    gap: 25px;
+    grid-auto-flow: column;
+    margin-bottom : 50px;
+}
+
+#profilText {
+    font-size: 150%;
+    max-width: 400px;
+    display: block; 
+    overflow: hidden;
+}
+
+img {
+    width: 400px;
+}
+
+@keyframes toto {
+    from {
+        margin-left: 100%;
+    }
+    75% {
+        margin-left: 25%;
+    }
+
+    to {
+        margin-left: 0%;
+    }
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg)
+    }
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+#bloc
+{
+    text-align: center;
+    width: 350px;
+    border: 1px solid #2d2d2d;
+    margin-top : 50px;
+    margin-bottom : 50px;
+}
+
+/* média querry : quand l'écran est plus grand que 960px */
+@media screen and (min-width: 960px){
+    .d-flex {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        gap: 100px;
+        grid-auto-flow: column;
+    }
+}

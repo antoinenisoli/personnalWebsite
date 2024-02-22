@@ -2,21 +2,33 @@
 <html lang="fr">
     <head>
         <title>AntoineNisoli_CV_Profil</title>
+        <link rel="stylesheet" href="../CSS/myStyle.css">
         <meta charset="UTF-8">
         <meta name="description" content="Page d'acceuil du CV d'Antoine Nisoli">
 		<meta name="auteur" content="Antoine Nisoli">
+
+        <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        </style>
     </head>
     <body>
         <header>
-            <h1>Antoine Nisoli - Développeur full stack .NET</h1>
-            <img src="images/antoine_nisoli.jpg" alt="Ma photo.">
+            <span id="authorName">
+                <p>
+                    Antoine Nisoli <br>
+                    <span class="job"> Développeur full stack .NET </span>
+                </p>
+            </span>
 
-            <p>
-                Dans le cadre de ma formation Concepteur Développeur
-                d'Application .NET full stack,
-                je suis activement à la recherche d'une alternance
-                a partir du 13/02/2024.
-            </p>
+            <section id="profileBloc">
+                <img src="../images/antoine_nisoli.jpg" alt="Ma photo.">
+                <p id="profilText">
+                    Dans le cadre de ma formation Concepteur Développeur
+                    d'Application .NET full stack,
+                    je suis activement à la recherche d'une alternance
+                    a partir du 13/02/2024.
+                </p>
+            </section>
             
             <nav>
                 <input type=button onClick="parent.location='experiences.html'" value='Expériences'>
@@ -26,10 +38,10 @@
             </nav>
         </header>
 
-        <main>
-            <section style="width:100%">
+        <main class="d-flex">
+            <section id="bloc">
                 <h2>PROFIL</h2>
-                <p style="max-width:800px">
+                <p>
                     Je prépare à la rentrée de Février
                     2024 un Titre RNCP de Niveau 6
                     Concepteur Developpeur
@@ -44,7 +56,7 @@
                 </p>
             </section>
     
-            <section style="width:100%">
+            <section id="bloc">
                 <h2>COORDONNÉES</h2>
                 <p>
                     07 70 30 11 85 <br>
@@ -54,7 +66,7 @@
                 </p>
             </section>
     
-            <section style="width:100%">
+            <section id="bloc">
                 <h2>LANGUES</h2>
                 <p> Anglais - Niveau B2 </p>
             </section>
