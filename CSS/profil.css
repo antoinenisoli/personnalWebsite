@@ -1,197 +1,197 @@
 body {
-    background-color:#09162F;
-    /*remove top margin*/
-    margin: 0;
-    padding: 0;
+  background-color: #09162f;
+  /*remove top margin*/
+  margin: 0;
+  padding: 0;
 }
 
 * {
-    font-family: "Poppins";
-    color: white;
+  font-family: "Poppins";
+  color: white;
 }
 
 .button {
-    font-size: 35px;
-    font-weight: bold;
-    transition-duration: 0.1s;
+  font-size: 35px;
+  font-weight: bold;
+  transition-duration: 0.1s;
 }
 
 .button:hover {
-    background-color:rgb(42, 98, 172);
-    transition-duration: 0.1s;
+  background-color: rgb(42, 98, 172);
+  transition-duration: 0.1s;
 }
 
 .header {
-    position: sticky; 
-    top: 0; 
-    left: 0; 
-    background-color:rgb(66, 148, 255, 0.9);
-    width: 100%; 
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: rgb(66, 148, 255, 0.9);
+  width: 100%;
 }
 
 .header-topMenu {
-    text-align: center;
-    margin: 0 auto; 
-    padding: 10px; 
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px;
 
-    > .button {
-        padding-left: 15px; 
-        padding-right: 15px; 
-    }
+  > .button {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 .authorName {
-    font-size: 35px;
-    padding-left: 15%;
-    font-weight: bold;
-    width: 60%;
+  font-size: 35px;
+  padding-left: 15%;
+  font-weight: bold;
+  width: 60%;
 }
 
 [class^="jobText"] {
-    color: rgb(66, 148, 255);
-    font-weight: bold;
+  color: rgb(66, 148, 255);
+  font-weight: bold;
 }
 
 .jobText_animated {
-    display: inline-block;
-    animation-name: slidein;
-    animation-duration: 1.5s;
+  display: inline-block;
+  animation-name: slidein;
+  animation-duration: 1.5s;
 }
 
 .profileBloc {
-    animation-name: grow;
-    animation-duration: 1s;
+  animation-name: grow;
+  animation-duration: 1s;
 
-    text-align: center;
-    padding-bottom: 10%;
+  text-align: center;
+  padding-bottom: 10%;
 
-    > img {
-        animation: float 6s ease-in-out infinite;
-        border-radius: 200px;
-        width: 50%;
-        filter: drop-shadow(0 0 1rem rgb(66, 148, 255));
-    }
+  > img {
+    animation: float 6s ease-in-out infinite;
+    border-radius: 200px;
+    width: 50%;
+    filter: drop-shadow(0 0 1rem rgb(66, 148, 255));
+  }
 
-    > p {
-        font-size: 150%;
-        margin: 5% 5%;
-    }
+  > p {
+    font-size: 150%;
+    margin: 5% 5%;
+  }
 
-    > p::before {
-        content: "💻";
-    }
+  > p::before {
+    content: "💻";
+  }
 
-    > p::after {
-        content: "💻";
-    }
+  > p::after {
+    content: "💻";
+  }
 }
 
 .d-flex {
-    > section {
-        text-align: center;
-        margin: 0 5%;
-    }
+  > section {
+    text-align: center;
+    margin: 0 5%;
+  }
 }
 
 .footer {
-    text-align: center;
-    background-color:rgba(23, 63, 116, 0.9);
-    width: 100%; 
-    bottom: 0;
-    margin: 0 auto; 
+  text-align: center;
+  background-color: rgba(23, 63, 116, 0.9);
+  width: 100%;
+  bottom: 0;
+  margin: 0 auto;
 }
 
 .divider {
-    background-color: white;
-    margin: 0 15%; 
-    height: .1em;
+  background-color: white;
+  margin: 0 15%;
+  height: 0.1em;
 }
 
 /* média querry : quand l'écran est plus grand que 640px */
-@media screen and (min-width: 640px){
-    .profileBloc {
-        display: grid;
-        justify-content: center;
-        align-content: center;
-        gap: 25px;
-        grid-auto-flow: column;
-        max-width: 50%;
-        padding: 0;
-        margin: 0 auto; 
+@media screen and (min-width: 640px) {
+  .profileBloc {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    gap: 25px;
+    grid-auto-flow: column;
+    max-width: 50%;
+    padding: 0;
+    margin: 0 auto;
 
-        > img {
-            width: 100%;
-        }
-
-        > p {
-            font-size: 200%;
-            text-align: left;
-        }
+    > img {
+      width: 100%;
     }
 
-    .d-flex {
-        display: grid;
-        justify-content: center;
-        align-content: center;
-        grid-auto-flow: column;
-
-        > section {
-            animation-name: unwrap;
-            animation-duration: 2s;
-            text-align: center;
-            width: 350px;
-            margin-top : 50px;
-            margin-bottom : 50px;
-        }
+    > p {
+      font-size: 200%;
+      text-align: left;
     }
+  }
+
+  .d-flex {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-auto-flow: column;
+
+    > section {
+      animation-name: unwrap;
+      animation-duration: 2s;
+      text-align: center;
+      width: 350px;
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+  }
 }
 
 @keyframes unwrap {
-    from {
-        opacity: 0;
-        width: 0;
-    }
-    
-    to {
-        opacity: 1;
-        width: 350px;
-    }
+  from {
+    opacity: 0;
+    width: 0;
+  }
+
+  to {
+    opacity: 1;
+    width: 350px;
+  }
 }
 
 @keyframes slidein {
-    from {
-        opacity: 0;
-        transform: translatex(200%);
-    }
-    
-    to {
-        opacity: 1;
-        transform: translatex(0%);
-    }
+  from {
+    opacity: 0;
+    transform: translatex(200%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translatex(0%);
+  }
 }
 
 @keyframes grow {
-    from {
-        opacity: 0;
-        transform: scale(0.2, 1);
-    }
+  from {
+    opacity: 0;
+    transform: scale(0.2, 1);
+  }
 
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 @keyframes float {
-    0% {
-        transform: translatey(0px);
-    }
-
-    50% {
-        transform: translatey(-20px);
-    }
-
-    100% {
-        transform: translatey(0px);
-    }
+  0% {
+    transform: translatey(0px);
   }
+
+  50% {
+    transform: translatey(-20px);
+  }
+
+  100% {
+    transform: translatey(0px);
+  }
+}
