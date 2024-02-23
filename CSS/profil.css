@@ -10,6 +10,17 @@ body {
   color: white;
 }
 
+@font-face {
+  font-family: "fontello";
+  src: url("./font/fontello.eot?79248018");
+  src: url("./font/fontello.eot?79248018#iefix") format("embedded-opentype"),
+    url("./font/fontello.woff?79248018") format("woff"),
+    url("./font/fontello.ttf?79248018") format("truetype"),
+    url("./font/fontello.svg?79248018#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .button {
   font-size: 35px;
   font-weight: bold;
@@ -76,14 +87,6 @@ body {
     font-size: 150%;
     margin: 5% 5%;
   }
-
-  > p::before {
-    content: "💻";
-  }
-
-  > p::after {
-    content: "💻";
-  }
 }
 
 .d-flex {
@@ -105,6 +108,10 @@ body {
   background-color: white;
   margin: 0 15%;
   height: 0.1em;
+}
+
+.icon-users {
+  font-family: "fontello";
 }
 
 /* média querry : quand l'écran est plus grand que 640px */
