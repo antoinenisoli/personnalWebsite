@@ -2,28 +2,23 @@
 <html lang="fr">
     <head>
         <title>AntoineNisoli_CV_Compétences</title>
-        <link rel="stylesheet" href="../CSS/myStyle.css">
+        <link rel="stylesheet" media="screen" href="../CSS/profil.css">
         <meta charset="UTF-8">
         <meta name="description" content="Page des compétences du CV d'Antoine Nisoli">
 		<meta name="auteur" content="Antoine Nisoli">    
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+
+        <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        </style>
     </head>
     <body>
-        <header>
-            <h1>Antoine Nisoli - Développeur full stack .NET</h1>
-            <img src="images/antoine_nisoli.jpg" alt="Ma photo">
-
-            <p>
-                Dans le cadre de ma formation Concepteur Développeur
-                d'Application .NET full stack,
-                je suis activement à la recherche d'une alternance
-                a partir du 13/02/2024.
-            </p>
-            
-            <nav>
-                <input type=button onClick="parent.location='experiences.html'" value='Expériences'>
-                <input type=button onClick="parent.location='index.html'" value='Profil'>
-                <input type=button onClick="parent.location='skills.html'" value='Compétences'>
-                <input type=button onClick="parent.location='education.html'" value='Formation'>            
+        <header class="header">
+            <nav role="naviguation" class="header-topMenu">
+                <a class="button" href="skills.html">Compétences</a>
+                <a class="button" href="experiences.html">Expériences</a>
+                <a class="button" href="education.html">Formation</a>    
+                <a class="button" href="index.html">Profil</a>
             </nav>
         </header>
 
@@ -53,9 +48,9 @@
             </section>
         </main>
 
-        <footer>
-            <a href="https://linktr.ee/antoinenisoli">     
-                <h1> Visiter mon portfolio </h1>
+        <footer class="footer">
+            <a class="button" href="https://linktr.ee/antoinenisoli">     
+                Visiter mon portfolio
             </a>
 
             <p>
