@@ -98,25 +98,3 @@ main {
     font-size: 35px;
   }
 }
-
-@keyframes unwrap {
-  from {
-    opacity: 0;
-    width: 0;
-  }
-
-  to {
-    opacity: 1;
-    width: 350px;
-  }
-}
-
-@keyframes grow {
-  from {
-    transform: scale(1);
-  }
-
-  to {
-    transform: scale(1.2);
-  }
-}

@@ -61,6 +61,9 @@ body {
 }
 
 .formations {
+  animation-name: fadeIn;
+  animation-duration: 2s;
+
   padding-bottom: 3em;
   display: flex;
   justify-content: center;
@@ -116,24 +119,12 @@ ul {
   }
 }
 
-@keyframes unwrap {
+@keyframes fadeIn {
   from {
     opacity: 0;
-    width: 0;
   }
 
   to {
     opacity: 1;
-    width: 350px;
-  }
-}
-
-@keyframes grow {
-  from {
-    transform: scale(1);
-  }
-
-  to {
-    transform: scale(1.2);
   }
 }
